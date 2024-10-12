@@ -7,7 +7,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    background-image: url('images/background.png');
+    background-image: url('images/b3.jpg');
     background-repeat: repeat;
     /*tiling effect*/
     background-size: cover;
@@ -20,7 +20,7 @@ body {
 header,
 footer {
     text-align: center;
-    background-color: #33333384;
+    background-color: #333333a1;
     color: #fff;
     padding: 1em;
     border-radius: 50px;
@@ -42,7 +42,7 @@ h1 {
 /*individual recip cards*/
 .recipe-card {
     text-align: center;
-    width: 50%;
+    justify-self: center;
     max-width: 400px;
     /*for screens that are very wide .. handling too much width stretching*/
     padding: 1.5em;
@@ -50,9 +50,49 @@ h1 {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, boxe-shadow 0.3s ease;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+/*anchor tag wrapping to make card clickable*/
+.recipe-link {
+    width: 100%;
+    max-width: 400px;
+    text-decoration: none;
+    color: inherit;
+}
+
+/*thumbnail image styling*/
+.recipe-thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 1em;
 }
 
 .recipe-card:hover {
     transform: scale(1.02);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/*active state for click effect*/
+.recipe-card:active {
+    transform: scale(0.98);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*flip animation*/
+@keyframes flip {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(180deg);
+    }
+}
+
+/*adding the flip animation to the active state*/
+.recipe-card:active {
+    animation: flip 0.6s forwards;
 }
