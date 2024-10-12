@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-image: url('images/background.png');
+    background-repeat: repeat;
+    /*tiling effect*/
+    background-size: cover;
+    /*scales the image to cover the area while maintaing it's aspect ration*/
+    background-position: center center;
+    /*centers image*/
+
+}
+
+header,
+footer {
+    text-align: center;
+    background-color: #33333384;
+    color: #fff;
+    padding: 1em;
+}
+
+h1 {
+    font-size: 2em;
+}
