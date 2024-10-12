@@ -28,3 +28,30 @@ footer {
 h1 {
     font-size: 2em;
 }
+
+/*recipe cards section*/
+.recipe-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+}
+
+/*individual recip cards*/
+.recipe-card {
+    text-align: center;
+    width: 50%;
+    max-width: 400px;
+    /*for screens that are very wide .. handling too much width stretching*/
+    padding: 1.5em;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, boxe-shadow 0.3s ease;
+}
+
+.recipe-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
