@@ -43,8 +43,6 @@
         <div class="recipe-cards">
 
             <!--individual recipe cards-->
-
-
             <div class="recipe-card dessert" data-category="dessert">
                 <a href="demo.html" class="recipe-link">
                     <h2>Chocolate Dipped Peanut Butter Cookies</h2>
@@ -56,9 +54,47 @@
                     <img src="images/desserts/chocolate-dipped-peanut-butter-cookies.jpg" alt="Thumbnail"
                         class="recipe-thumbnail">
                 </a>
-
+				<a href="#nutritionalModal1" class="open-button">View Nutritional Info</a>
             </div>
 
+			<!--nutritional view modal-->
+            <div class="modal" id="nutritionalModal1">
+                <div class="modal-content">
+                    <a href="#" class="close-button">&times;</a>
+                    <h2>Nutritional Information for Chocolate Dipped Peanut Butter Cookies</h2>
+					<p class="serving-size">Serving Size: 1 cookie</p>
+                    <div class="nutritional-info">
+                        <div class="nutrient">
+                            <label>Calories:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 115px;"></div>
+                            </div>
+							<span class="nutritional-value">115 kcal</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Protein:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 30px;"></div>
+                            </div>
+							<span class="nutritional-value">3 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Fat:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70px;"></div>
+                            </div>
+							<span class="nutritional-value">7 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Carbohydrates:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 110px;"></div>
+                            </div>
+							<span class="nutritional-value">11 g</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
             <div class="recipe-card breakfast" data-category="breakfast">
@@ -72,9 +108,47 @@
                     <img src="images/breakfast/ham-and-cheese-breakfast-casserole.webp" alt="Thumbnail"
                         class="recipe-thumbnail">
                 </a>
-
+				<a href="#nutritionalModal2" class="open-button">View Nutritional Info</a>
             </div>
 
+            <div class="modal" id="nutritionalModal2">
+                <div class="modal-content">
+                    <a href="#" class="close-button">&times;</a>
+                    <h2>Nutritional Information for Ham And Cheese Breakfast Casserole</h2>
+					<p class="serving-size">Serving Size: 1/6th of recipe</p>
+                    <div class="nutritional-info">
+                        <div class="nutrient">
+                            <label>Calories:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 330px;"></div>
+                            </div>
+							<span class="nutritional-value">330 kcal</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Protein:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 250px;"></div>
+                            </div>
+							<span class="nutritional-value">25 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Fat:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 160px;"></div>
+                            </div>
+							<span class="nutritional-value">16 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Carbohydrates:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 210px;"></div>
+                            </div>
+							<span class="nutritional-value">21 g</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			
 
             <div class="recipe-card LunDin" data-category="LunDin">
                 <a href="demo.html" class="recipe-link">
@@ -84,9 +158,47 @@
                     <img src="images/Lunch&Dinner/Grilled-Pork-Chop-Marinade.jpg" alt="Thumbnail"
                         class="recipe-thumbnail">
                 </a>
-
+				<a href="#nutritionalModal3" class="open-button">View Nutritional Info</a>
             </div>
 
+            <div class="modal" id="nutritionalModal3">
+                <div class="modal-content">
+                    <a href="#" class="close-button">&times;</a>
+                    <h2>Nutritional Information for Grilled Pork Chop Marinade</h2>
+					<p class="serving-size">Serving Size: 1 marinated pork chop</p>
+                    <div class="nutritional-info">
+                        <div class="nutrient">
+                            <label>Calories:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 272px;"></div>
+                            </div>
+							<span class="nutritional-value">272 kcal</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Protein:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 320px;"></div>
+                            </div>
+							<span class="nutritional-value">32 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Fat:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 120px;"></div>
+                            </div>
+							<span class="nutritional-value">12 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Carbohydrates:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70px;"></div>
+                            </div>
+							<span class="nutritional-value">7 g</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			
 
             <div class="recipe-card breakfast" data-category="breakfast">
                 <a href="demo.html" class="recipe-link">
@@ -95,7 +207,45 @@
                         warm and sweet flavors in a hearty, secretly nutritious breakfast.</p>
                     <img src="images/breakfast/pumpkin-baked-oatmeal.webp" alt="Thumbnail" class="recipe-thumbnail">
                 </a>
-
+				<a href="#nutritionalModal4" class="open-button">View Nutritional Info</a>
+            </div>
+			
+            <div class="modal" id="nutritionalModal4">
+                <div class="modal-content">
+                    <a href="#" class="close-button">&times;</a>
+                    <h2>Nutritional Information for Pumpkin Baked Oatmeal</h2>
+					<p class="serving-size">Serving Size: 1/9th of recipe</p>
+                    <div class="nutritional-info">
+                        <div class="nutrient">
+                            <label>Calories:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 250px;"></div>
+                            </div>
+							<span class="nutritional-value">250 kcal</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Protein:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70px;"></div>
+                            </div>
+							<span class="nutritional-value">7 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Fat:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 100px;"></div>
+                            </div>
+							<span class="nutritional-value">10 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Carbohydrates:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 350px;"></div>
+                            </div>
+							<span class="nutritional-value">35 g</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
@@ -108,9 +258,46 @@
                     </p>
                     <img src="images/desserts/berry-oat-crumble-bars.webp" alt="Thumbnail" class="recipe-thumbnail">
                 </a>
-
+				<a href="#nutritionalModal5" class="open-button">View Nutritional Info</a>
             </div>
-
+			
+            <div class="modal" id="nutritionalModal5">
+                <div class="modal-content">
+                    <a href="#" class="close-button">&times;</a>
+                    <h2>Nutritional Information for Berry Oat Crumble Bars</h2>
+					<p class="serving-size">Serving Size: 1 bar</p>
+                    <div class="nutritional-info">
+                        <div class="nutrient">
+                            <label>Calories:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 155px;"></div>
+                            </div>
+							<span class="nutritional-value">155 kcal</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Protein:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 20px;"></div>
+                            </div>
+							<span class="nutritional-value">2 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Fat:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70px;"></div>
+                            </div>
+							<span class="nutritional-value">7 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Carbohydrates:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 230px;"></div>
+                            </div>
+							<span class="nutritional-value">23 g</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
             <div class="recipe-card drink" data-category="drink">
@@ -122,7 +309,45 @@
                     <img src="images/drinks&smoothies/cinnamon-coconut-latte.webp" alt="Thumbnail"
                         class="recipe-thumbnail">
                 </a>
-
+				<a href="#nutritionalModal6" class="open-button">View Nutritional Info</a>
+            </div>
+			
+            <div class="modal" id="nutritionalModal6">
+                <div class="modal-content">
+                    <a href="#" class="close-button">&times;</a>
+                    <h2>Nutritional Information for Cinnamon Coconut Latte</h2>
+					<p class="serving-size">Serving Size: 1 latte</p>
+                    <div class="nutritional-info">
+                        <div class="nutrient">
+                            <label>Calories:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 155px;"></div>
+                            </div>
+							<span class="nutritional-value">155 kcal</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Protein:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 0px;"></div>
+                            </div>
+							<span class="nutritional-value">0 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Fat:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 130px;"></div>
+                            </div>
+							<span class="nutritional-value">13 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Carbohydrates:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 10px;"></div>
+                            </div>
+							<span class="nutritional-value">1 g</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
@@ -135,7 +360,45 @@
                     <img src="images/breakfast/the-perfect-greek-yogurt-bagels.jpg" alt="Thumbnail"
                         class="recipe-thumbnail">
                 </a>
-
+				<a href="#nutritionalModal7" class="open-button">View Nutritional Info</a>
+            </div>
+			
+            <div class="modal" id="nutritionalModal7">
+                <div class="modal-content">
+                    <a href="#" class="close-button">&times;</a>
+                    <h2>Nutritional Information for The Perfect Greek Yogurt Bagels</h2>
+					<p class="serving-size">Serving Size: 1 bagel</p>
+                    <div class="nutritional-info">
+                        <div class="nutrient">
+                            <label>Calories:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 152px;"></div>
+                            </div>
+							<span class="nutritional-value">152 kcal</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Protein:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80px;"></div>
+                            </div>
+							<span class="nutritional-value">8 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Fat:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 20px;"></div>
+                            </div>
+							<span class="nutritional-value">2 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Carbohydrates:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 250px;"></div>
+                            </div>
+							<span class="nutritional-value">25 g</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
@@ -148,8 +411,47 @@
                     <img src="images/drinks&smoothies/delicious-protein-pumpkin-spice-smoothie.webp" alt="Thumbnail"
                         class="recipe-thumbnail">
                 </a>
-
+				<a href="#nutritionalModal8" class="open-button">View Nutritional Info</a>
             </div>
+			
+            <div class="modal" id="nutritionalModal8">
+                <div class="modal-content">
+                    <a href="#" class="close-button">&times;</a>
+                    <h2>Nutritional Information for Delicious Protein Pumpkin Spice Smoothie</h2>
+					<p class="serving-size">Serving Size: 1 serving</p>
+                    <div class="nutritional-info">
+                        <div class="nutrient">
+                            <label>Calories:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 368px;"></div>
+                            </div>
+							<span class="nutritional-value">368 kcal</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Protein:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 330px;"></div>
+                            </div>
+							<span class="nutritional-value">33 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Fat:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 140px;"></div>
+                            </div>
+							<span class="nutritional-value">14 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Carbohydrates:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 320px;"></div>
+                            </div>
+							<span class="nutritional-value">32 g</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			
 
             <div class="recipe-card drink" data-category="drink">
                 <a href="demo.html" class="recipe-link">
@@ -161,9 +463,46 @@
                     <img src="images/drinks&smoothies/strawberry-cheesecake-smoothie.webp" alt="Thumbnail"
                         class="recipe-thumbnail">
                 </a>
-
+				<a href="#nutritionalModal9" class="open-button">View Nutritional Info</a>
             </div>
 
+            <div class="modal" id="nutritionalModal9">
+                <div class="modal-content">
+                    <a href="#" class="close-button">&times;</a>
+                    <h2>Nutritional Information for Strawberry Cheesecake Smoothie</h2>
+					<p class="serving-size">Serving Size: 2 servings</p>
+                    <div class="nutritional-info">
+                        <div class="nutrient">
+                            <label>Calories:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 292px;"></div>
+                            </div>
+							<span class="nutritional-value">292 kcal</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Protein:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 170px;"></div>
+                            </div>
+							<span class="nutritional-value">17 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Fat:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90px;"></div>
+                            </div>
+							<span class="nutritional-value">9 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Carbohydrates:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 330px;"></div>
+                            </div>
+							<span class="nutritional-value">33 g</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
             <div class="recipe-card LunDin" data-category="LunDin">
@@ -175,8 +514,47 @@
                     <img src="images/Lunch&Dinner/baked-italian-meatballs.webp" alt="Thumbnail"
                         class="recipe-thumbnail">
                 </a>
-
+				<a href="#nutritionalModal10" class="open-button">View Nutritional Info</a>
             </div>
+			
+            <div class="modal" id="nutritionalModal10">
+                <div class="modal-content">
+                    <a href="#" class="close-button">&times;</a>
+                    <h2>Nutritional Information for Baked Italian Meatballs</h2>
+					<p class="serving-size">Serving Size: 3 meatballs</p>
+                    <div class="nutritional-info">
+                        <div class="nutrient">
+                            <label>Calories:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 239px;"></div>
+                            </div>
+							<span class="nutritional-value">239 kcal</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Protein:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 320px;"></div>
+                            </div>
+							<span class="nutritional-value">32 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Fat:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80px;"></div>
+                            </div>
+							<span class="nutritional-value">8 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Carbohydrates:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80px;"></div>
+                            </div>
+							<span class="nutritional-value">8 g</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			
 
             <div class="recipe-card drink" data-category="drink">
                 <a href="demo.html" class="recipe-link">
@@ -186,7 +564,45 @@
                     <img src="images/drinks&smoothies/apple-cider-sangria.webp" alt="Thumbnail"
                         class="recipe-thumbnail">
                 </a>
-
+				<a href="#nutritionalModal11" class="open-button">View Nutritional Info</a>
+            </div>
+			
+            <div class="modal" id="nutritionalModal11">
+                <div class="modal-content">
+                    <a href="#" class="close-button">&times;</a>
+                    <h2>Nutritional Information for Apple Cider Sangria</h2>
+					<p class="serving-size">Serving Size: 1 cup</p>
+                    <div class="nutritional-info">
+                        <div class="nutrient">
+                            <label>Calories:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 131px;"></div>
+                            </div>
+							<span class="nutritional-value">131 kcal</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Protein:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 0px;"></div>
+                            </div>
+							<span class="nutritional-value">0 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Fat:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 0px;"></div>
+                            </div>
+							<span class="nutritional-value">0 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Carbohydrates:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 150px;"></div>
+                            </div>
+							<span class="nutritional-value">15 g</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
@@ -199,7 +615,45 @@
                     <img src="images/Lunch&Dinner/ground-beef-and-zucchini-skillet-(mexican-inspired_flavors).jpg"
                         alt="Thumbnail" class="recipe-thumbnail">
                 </a>
-
+				<a href="#nutritionalModal12" class="open-button">View Nutritional Info</a>
+            </div>
+			
+            <div class="modal" id="nutritionalModal12">
+                <div class="modal-content">
+                    <a href="#" class="close-button">&times;</a>
+                    <h2>Nutritional Information for Ground Beef And Zucchini Skillet (Mexican-Inspired flavors)</h2>
+					<p class="serving-size">Serving Size: 1/6th of recipe</p>
+                    <div class="nutritional-info">
+                        <div class="nutrient">
+                            <label>Calories:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 379px;"></div>
+                            </div>
+							<span class="nutritional-value">379 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Protein:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 280px;"></div>
+                            </div>
+							<span class="nutritional-value">28 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Fat:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 100px;"></div>
+                            </div>
+							<span class="nutritional-value">10 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Carbohydrates:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 270px;"></div>
+                            </div>
+							<span class="nutritional-value">27 g</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
@@ -212,12 +666,46 @@
                     <img src="images/soups/creamy-potato-leek-soup-with-bacon.webp" alt="Thumbnail"
                         class="recipe-thumbnail">
                 </a>
-
+				<a href="#nutritionalModal13" class="open-button">View Nutritional Info</a>
             </div>
-
-
-
-
+			
+            <div class="modal" id="nutritionalModal13">
+                <div class="modal-content">
+                    <a href="#" class="close-button">&times;</a>
+                    <h2>Nutritional Information for Creamy Potato Leek Soup With Bacon</h2>
+					<p class="serving-size">Serving Size: 1.5 cups</p>
+                    <div class="nutritional-info">
+                        <div class="nutrient">
+                            <label>Calories:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 261px;"></div>
+                            </div>
+							<span class="nutritional-value">261 kcal</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Protein:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 120px;"></div>
+                            </div>
+							<span class="nutritional-value">12 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Fat:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 50px;"></div>
+                            </div>
+							<span class="nutritional-value">5 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Carbohydrates:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 450px;"></div>
+                            </div>
+							<span class="nutritional-value">45 g</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
             <div class="recipe-card salads" data-category="salads">
@@ -229,7 +717,45 @@
                     <img src="images/salads/harvest-chicken-salad-with-maple-dijon-dressing.jpg" alt="Thumbnail"
                         class="recipe-thumbnail">
                 </a>
-
+				<a href="#nutritionalModal14" class="open-button">View Nutritional Info</a>
+            </div>
+			
+            <div class="modal" id="nutritionalModal14">
+                <div class="modal-content">
+                    <a href="#" class="close-button">&times;</a>
+                    <h2>Nutritional Information for Harvest Chicken Salad With Maple Dijon Dressing</h2>
+					<p class="serving-size">Serving Size: 1/6th of recipe</p>
+                    <div class="nutritional-info">
+                        <div class="nutrient">
+                            <label>Calories:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 361px;"></div>
+                            </div>
+							<span class="nutritional-value">361 kcal</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Protein:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 210px;"></div>
+                            </div>
+							<span class="nutritional-value">21 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Fat:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 190px;"></div>
+                            </div>
+							<span class="nutritional-value">19 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Carbohydrates:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 310px;"></div>
+                            </div>
+							<span class="nutritional-value">31 g</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
@@ -242,9 +768,46 @@
                     <img src="images/Lunch&Dinner/the-best-smothered-pork-chops.jpg" alt="Thumbnail"
                         class="recipe-thumbnail">
                 </a>
-
+				<a href="#nutritionalModal15" class="open-button">View Nutritional Info</a>
             </div>
 
+            <div class="modal" id="nutritionalModal15">
+                <div class="modal-content">
+                    <a href="#" class="close-button">&times;</a>
+                    <h2>Nutritional Information for The Best Smothered Pork Chops</h2>
+					<p class="serving-size">Serving Size: 1/4th of recipe (1 pork chop)</p>
+                    <div class="nutritional-info">
+                        <div class="nutrient">
+                            <label>Calories:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 293px;"></div>
+                            </div>
+							<span class="nutritional-value">293 kcal</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Protein:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 360px;"></div>
+                            </div>
+							<span class="nutritional-value">36 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Fat:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 110px;"></div>
+                            </div>
+							<span class="nutritional-value">11 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Carbohydrates:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 130px;"></div>
+                            </div>
+							<span class="nutritional-value">13 g</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
             <div class="recipe-card salads" data-category="salads">
@@ -256,7 +819,45 @@
                     <img src="images/salads/thai-inspired-sweet-potato-peanut-bowl-with-chicken.webp" alt="Thumbnail"
                         class="recipe-thumbnail">
                 </a>
-
+				<a href="#nutritionalModal16" class="open-button">View Nutritional Info</a>
+            </div>
+			
+            <div class="modal" id="nutritionalModal16">
+                <div class="modal-content">
+                    <a href="#" class="close-button">&times;</a>
+                    <h2>Nutritional Information for Thai-Inpsired Sweet Potato Peanut Bowl With Chicken</h2>
+					<p class="serving-size">Serving Size: 1/6th of recipe</p>
+                    <div class="nutritional-info">
+                        <div class="nutrient">
+                            <label>Calories:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 431px;"></div>
+                            </div>
+							<span class="nutritional-value">431 kcal</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Protein:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 290px;"></div>
+                            </div>
+							<span class="nutritional-value">29 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Fat:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 240px;"></div>
+                            </div>
+							<span class="nutritional-value">24 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Carbohydrates:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 280px;"></div>
+                            </div>
+							<span class="nutritional-value">28 g</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
@@ -268,7 +869,45 @@
                         texture thanks to the chocolate chips.</p>
                     <img src="images/desserts/pumpkin-brownies.jpg" alt="Thumbnail" class="recipe-thumbnail">
                 </a>
-
+				<a href="#nutritionalModal17" class="open-button">View Nutritional Info</a>
+            </div>
+			
+            <div class="modal" id="nutritionalModal17">
+                <div class="modal-content">
+                    <a href="#" class="close-button">&times;</a>
+                    <h2>Nutritional Information for Pumpkin Brownies</h2>
+					<p class="serving-size">Serving Size: 1/16th of recipe</p>
+                    <div class="nutritional-info">
+                        <div class="nutrient">
+                            <label>Calories:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 216px;"></div>
+                            </div>
+							<span class="nutritional-value">216 kcal</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Protein:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 30px;"></div>
+                            </div>
+							<span class="nutritional-value">3 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Fat:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90px;"></div>
+                            </div>
+							<span class="nutritional-value">9 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Carbohydrates:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 300px;"></div>
+                            </div>
+							<span class="nutritional-value">30 g</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
@@ -280,7 +919,45 @@
                         alongside a grilled cheese or your favorite sandwich.</p>
                     <img src="images/soups/stovetop-tomato-basil-soup.webp" alt="Thumbnail" class="recipe-thumbnail">
                 </a>
-
+				<a href="#nutritionalModal18" class="open-button">View Nutritional Info</a>
+            </div>
+			
+            <div class="modal" id="nutritionalModal18">
+                <div class="modal-content">
+                    <a href="#" class="close-button">&times;</a>
+                    <h2>Nutritional Information for Stovetop Tomato Basil Soup</h2>
+					<p class="serving-size">Serving Size: 1 cup</p>
+                    <div class="nutritional-info">
+                        <div class="nutrient">
+                            <label>Calories:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 165px;"></div>
+                            </div>
+							<span class="nutritional-value">165 kcal</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Protein:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 40px;"></div>
+                            </div>
+							<span class="nutritional-value">4 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Fat:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90px;"></div>
+                            </div>
+							<span class="nutritional-value">9 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Carbohydrates:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 150px;"></div>
+                            </div>
+							<span class="nutritional-value">15 g</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
@@ -293,9 +970,46 @@
                     <img src="images/salads/apple-broccoli-cauliflower-salad-with-lemon.jpg" alt="Thumbnail"
                         class="recipe-thumbnail">
                 </a>
-
+				<a href="#nutritionalModal19" class="open-button">View Nutritional Info</a>
             </div>
-
+			
+            <div class="modal" id="nutritionalModal19">
+                <div class="modal-content">
+                    <a href="#" class="close-button">&times;</a>
+                    <h2>Nutritional Information for Apple Broccoli Cauliflower Salad With Lemon</h2>
+					<p class="serving-size">Serving Size: 1/10th of recipe (1 cup)</p>
+                    <div class="nutritional-info">
+                        <div class="nutrient">
+                            <label>Calories:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 275px;"></div>
+                            </div>
+							<span class="nutritional-value">275 kcal</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Protein:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 40px;"></div>
+                            </div>
+							<span class="nutritional-value">4 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Fat:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 220px;"></div>
+                            </div>
+							<span class="nutritional-value">22 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Carbohydrates:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 170px;"></div>
+                            </div>
+							<span class="nutritional-value">17 g</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
             <div class="recipe-card soups" data-category="soups">
@@ -307,13 +1021,48 @@
                     <img src="images/soups/beef-and-lentil-stew-(moroccan-spiced).webp" alt="Thumbnail"
                         class="recipe-thumbnail">
                 </a>
-
+				<a href="#nutritionalModal20" class="open-button">View Nutritional Info</a>
             </div>
 
-
-
-
-
+            <div class="modal" id="nutritionalModal20">
+                <div class="modal-content">
+                    <a href="#" class="close-button">&times;</a>
+                    <h2>Nutritional Information for Beef And Lentil Stew (Moroccan Spiced)</h2>
+					<p class="serving-size">Serving Size: 1/8th of recipe (1 cup)</p>
+                    <div class="nutritional-info">
+                        <div class="nutrient">
+                            <label>Calories:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 318px;"></div>
+                            </div>
+							<span class="nutritional-value">318 kcal</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Protein:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 300px;"></div>
+                            </div>
+							<span class="nutritional-value">30 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Fat:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 120px;"></div>
+                            </div>
+							<span class="nutritional-value">12 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Carbohydrates:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 220px;"></div>
+                            </div>
+							<span class="nutritional-value">22 g</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			
+			
         </div>
 
     </main>
