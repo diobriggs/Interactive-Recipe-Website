@@ -130,29 +130,23 @@ h1 {
 
 /* Filtering logic using attribute selectors */
 [value="dessert"]:checked~div.recipe-cards div.recipe-card[data-category="dessert"],
-[value="vegan"]:checked~div.recipe-cards div.recipe-card[data-category="vegan"],
+[value="LunDin"]:checked~div.recipe-cards div.recipe-card[data-category="LunDin"],
+[value="salads"]:checked~div.recipe-cards div.recipe-card[data-category="salads"],
+[value="soups"]:checked~div.recipe-cards div.recipe-card[data-category="soups"],
+[value="breakfast"]:checked~div.recipe-cards div.recipe-card[data-category="breakfast"],
 [value="drink"]:checked~div.recipe-cards div.recipe-card[data-category="drink"] {
     display: block;
     animation: fadeIn .25s;
 }
 
 [value="dessert"]:not(:checked)~div.recipe-cards div.recipe-card[data-category="dessert"],
-[value="vegan"]:not(:checked)~div.recipe-cards div.recipe-card[data-category="vegan"],
+[value="LunDin"]:not(:checked)~div.recipe-cards div.recipe-card[data-category="LunDin"],
+[value="salads"]:not(:checked)~div.recipe-cards div.recipe-card[data-category="salads"],
+[value="soups"]:not(:checked)~div.recipe-cards div.recipe-card[data-category="soups"],
+[value="breakfast"]:not(:checked)~div.recipe-cards div.recipe-card[data-category="breakfast"],
 [value="drink"]:not(:checked)~div.recipe-cards div.recipe-card[data-category="drink"] {
     animation: fadeOut .25s;
     display: none;
-}
-
-.dessert {
-    color: teal;
-}
-
-.vegan {
-    color: firebrick;
-}
-
-.drink {
-    color: lightseagreen
 }
 
 .input {
