@@ -12,50 +12,78 @@
     <!--header section-->
     <header>
         <h1>Delicious Recipes</h1>
-        <!--filter options-->
+
     </header>
 
     <!--main content section-->
     <main>
+        <!--filter options-->
+        <label for="dessert">Dessert</label>
+        <input name="filter" class="input" type="checkbox" id="dessert" value="dessert" checked>
+
+        <label for="vegan">Vegan</label>
+        <input name="filter" class="input" type="checkbox" id="vegan" value="vegan" checked>
+
+        <label for="drink">Drink</label>
+        <input name="filter" class="input" type="checkbox" id="drink" value="drink" checked>
+
+
+
+
         <!--recipe card containers-->
-        <section class="recipe-cards">
+        <div class="recipe-cards">
             <!--individual cards here-->
-            <a href="demo.html" class="recipe-link">
-                <div class="recipe-card">
+            <div class="recipe-card dessert" data-category="dessert">
+                <a href="demo.html" class="recipe-link">
                     <h2>Placeholder Title</h2>
-                    <p>Description</p>
+                    <p>chocolate desert</p>
+                    <!--thumbnail dummy for testing purposes for now-->
                     <img src="images/background.png" alt="Thumbnail" class="recipe-thumbnail">
-                </div>
-            </a>
-            <a href="demo.html" class="recipe-link">
-                <div class="recipe-card">
+                </a>
+
+            </div>
+
+            <div class="recipe-card vegan" data-category="vegan">
+                <a href="demo.html" class="recipe-link">
                     <h2>Placeholder Title</h2>
-                    <p>Description</p>
+                    <p>Description of a vegan recipe</p>
                     <img src="images/background.png" alt="Thumbnail" class="recipe-thumbnail">
-                </div>
-            </a>
-            <a href="demo.html" class="recipe-link">
-                <div class="recipe-card">
+                </a>
+
+            </div>
+
+            <div class="recipe-card drink" data-category="drink">
+                <a href="demo.html" class="recipe-link">
                     <h2>Placeholder Title</h2>
-                    <p>Description</p>
+                    <p>Description of a drink recipe</p>
                     <img src="images/background.png" alt="Thumbnail" class="recipe-thumbnail">
-                </div>
-            </a>
-            <a href="demo.html" class="recipe-link">
-                <div class="recipe-card">
+                </a>
+
+            </div>
+
+
+            <div class="recipe-card dessert" data-category="dessert">
+                <a href="demo.html" class="recipe-link">
                     <h2>Placeholder Title</h2>
-                    <p>Description</p>
+                    <p>Description of a desert recipe</p>
                     <img src="images/background.png" alt="Thumbnail" class="recipe-thumbnail">
-                </div>
-            </a>
-            <a href="demo.html" class="recipe-link">
-                <div class="recipe-card">
+                </a>
+
+            </div>
+
+
+
+            <div class="recipe-card vegan" data-category="vegan">
+                <a href="demo.html" class="recipe-link">
                     <h2>Placeholder Title</h2>
-                    <p>Description</p>
+                    <p>Description of a vegan recipe</p>
                     <img src="images/background.png" alt="Thumbnail" class="recipe-thumbnail">
-                </div>
-            </a>
-        </section>
+                </a>
+
+            </div>
+
+        </div>
+
     </main>
 
     <!--footer section-->

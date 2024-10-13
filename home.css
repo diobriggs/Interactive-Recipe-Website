@@ -32,31 +32,34 @@ h1 {
 
 /*recipe cards section*/
 .recipe-cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2em;
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    grid-gap: 2em;
+    grid-auto-flow: dense;
     padding: 2em;
 }
 
-/*individual recip cards*/
+/*individual recipe cards*/
 .recipe-card {
+    display: flex;
     text-align: center;
-    justify-self: center;
     max-width: 400px;
     /*for screens that are very wide .. handling too much width stretching*/
     padding: 1.5em;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, boxe-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     transform-style: preserve-3d;
     cursor: pointer;
 }
 
-/*anchor tag wrapping to make card clickable*/
+/*make card clickable*/
 .recipe-link {
     width: 100%;
+    justify-self: center;
     max-width: 400px;
     text-decoration: none;
     color: inherit;
@@ -70,6 +73,7 @@ h1 {
     margin-bottom: 1em;
 }
 
+/*hover effect*/
 .recipe-card:hover {
     transform: scale(1.02);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
@@ -95,4 +99,97 @@ h1 {
 /*adding the flip animation to the active state*/
 .recipe-card:active {
     animation: flip 0.6s forwards;
+}
+
+/*Fade In and Fade Out animations for filtering effect*/
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/*adding the flip animation to the active state*/
+.recipe-card:active {
+    animation: flip 0.6s forwards;
+}
+
+
+/* Filtering logic using attribute selectors */
+[value="dessert"]:checked~div.recipe-cards div.recipe-card[data-category="dessert"],
+[value="vegan"]:checked~div.recipe-cards div.recipe-card[data-category="vegan"],
+[value="drink"]:checked~div.recipe-cards div.recipe-card[data-category="drink"] {
+    display: block;
+    animation: fadeIn .25s;
+}
+
+[value="dessert"]:not(:checked)~div.recipe-cards div.recipe-card[data-category="dessert"],
+[value="vegan"]:not(:checked)~div.recipe-cards div.recipe-card[data-category="vegan"],
+[value="drink"]:not(:checked)~div.recipe-cards div.recipe-card[data-category="drink"] {
+    animation: fadeOut .25s;
+    display: none;
+}
+
+.dessert {
+    color: teal;
+}
+
+.vegan {
+    color: firebrick;
+}
+
+.drink {
+    color: lightseagreen
+}
+
+.input {
+    margin: 0.5em;
+    transform: scale(1.2);
+    /*slightly larger checkboxes*/
+    cursor: pointer;
+    color: white;
+
+}
+
+
+/*centering and styling the filter options*/
+main {
+    text-align: center;
+    margin-bottom: 3em;
+    margin-top: 3em;
+    min-height: 70vh;
+}
+
+main label {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #333;
+    margin-right: 0.5em;
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+main .input {
+    transform: scale(1.2);
+    /*checkboxes slightly larger*/
+    margin-right: 1.5em;
+    cursor: pointer;
+    vertical-align: middle;
+
 }
