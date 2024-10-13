@@ -20,7 +20,7 @@ body {
 header,
 footer {
     text-align: center;
-    background-color: #333333a1;
+    background-color: #333333b9;
     color: #fff;
     padding: 1em;
     border-radius: 50px;
@@ -75,8 +75,9 @@ h1 {
 
 /*hover effect*/
 .recipe-card:hover {
-    transform: scale(1.02);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(252, 235, 215, 0.477);
+    background-color: rgb(252, 235, 215);
 }
 
 /*active state for click effect*/
@@ -174,13 +175,13 @@ main label {
     margin-right: 0.5em;
     display: inline-block;
     padding: 0.5em 1em;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.912);
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 main .input {
-    transform: scale(1.2);
+    transform: scale(1.6);
     /*checkboxes slightly larger*/
     margin-right: 1.5em;
     cursor: pointer;
