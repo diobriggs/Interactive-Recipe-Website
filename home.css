@@ -30,6 +30,10 @@ h1 {
     font-size: 2em;
 }
 
+h2 {
+    margin-bottom: 1em;
+}
+
 /*recipe cards section*/
 .recipe-cards {
     margin-top: 2em;
@@ -67,10 +71,10 @@ h1 {
 
 /*thumbnail image styling*/
 .recipe-thumbnail {
+    margin-top: 2em;
     width: 100%;
     height: auto;
     border-radius: 8px 8px 0 0;
-    margin-bottom: 1em;
 }
 
 /*hover effect*/
