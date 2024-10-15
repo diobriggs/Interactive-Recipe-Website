@@ -23,6 +23,10 @@ footer {
     border-radius: 50px;
 }
 
+header {
+    margin-bottom: 2em;
+}
+
 h1 {
     font-size: 2em;
 }
@@ -68,8 +72,10 @@ h2 {
 
 .image-item img {
     width: 100%;
-    height: 100%; /* Ensures the image height scales with its aspect ratio */
-    object-fit: cover; /* Ensures the image covers the area without being stretched */
+    height: 100%;
+    /* Ensures the image height scales with its aspect ratio */
+    object-fit: cover;
+    /* Ensures the image covers the area without being stretched */
     border-radius: 8px;
 }
 
@@ -78,15 +84,15 @@ input[type="radio"] {
     display: none;
 }
 
-#image1:checked ~ .images {
+#image1:checked~.images {
     transform: translateX(0);
 }
 
-#image2:checked ~ .images {
+#image2:checked~.images {
     transform: translateX(-100%);
 }
 
-#image3:checked ~ .images {
+#image3:checked~.images {
     transform: translateX(-200%);
 }
 
