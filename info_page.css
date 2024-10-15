@@ -172,7 +172,7 @@ footer:hover {
 .modal {
     display: none;
     position: fixed;
-    z-index: 1000;
+    z-index: 2000;
     left: 0;
     top: 0;
     width: 100%;
@@ -182,12 +182,15 @@ footer:hover {
 
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto;
     padding: 20px;
-    border: 1px solid #888;
+    border-radius: 8px;
     width: 80%;
     max-width: 500px;
-    border-radius: 8px;
+    max-height: 80%; /* Prevent overflow */
+    overflow-y: auto; /* Enable scrolling if needed */
+    margin-top: 50px; /* Adjust this value to move the modal higher or lower */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
 }
 
 /* Show modal when targeted */
