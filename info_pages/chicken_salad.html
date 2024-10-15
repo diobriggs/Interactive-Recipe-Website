@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Info</title>
+    <link rel="stylesheet" href="../info_page.css">
+</head>
+
+<body>
+    <header>
+        <h1>Harvest Chicken Salad with Maple Dijon Dressing</h1>
+    </header>
+
+    <main>
+        <section class="recipe-info">
+             <!-- Gallery of images for the recipe -->
+            <div class="image-gallery">
+                <input type="radio" name="gallery" id="image1" checked>
+                <input type="radio" name="gallery" id="image2">
+                <input type="radio" name="gallery" id="image3">
+
+                <div class="images">
+                    <div class="image-item">
+                        <img src="../images/galleries/chicken-salad/hcs-bar1.webp" alt="HCS Image 1">
+                    </div>
+                    <div class="image-item">
+                        <img src="../images/galleries/chicken-salad/hcs-bar2.webp" alt="HCS Image 2">
+                    </div>
+                    <div class="image-item">
+                        <img src="../images/galleries/chicken-salad/hcs-bar3.webp" alt="HCS Image 3">
+                    </div>
+                </div>
+
+                <!-- Navigation buttons -->
+                <div class="gallery-controls">
+                    <label for="image1" class="prev">&#10094;</label>
+                    <label for="image2" class="next">&#10095;</label>
+                    <label for="image3" class="next">&#10095;</label>
+                </div>
+            </div>
+
+            <!-- Ingredients list -->
+            <h2>Ingredients</h2>
+            <ul class="ingredients-list">
+                <li>2 teaspoons avocado oil, divided </li>
+                <li>1 medium sweet potato, peeled and diced into 1-inch pieces (~2 cups)</li>
+                <li>1 small red onion, diced (~1 cup)</li>
+                <li>¼ teaspoon fine salt </li>
+                <li>¼ teaspoon black pepper</li>
+                <li>1 lb raw chicken breast, cubed</li>
+                <li>4 large handfuls fresh spinach (5 ounces)</li>
+                <li>½ cup dried cranberries</li>
+                <li>1 medium apple, diced (about 1 cup)</li>
+                <li>½ cup chopped walnuts or pecans, toasted</li>
+                <h3>For the Creamy Maple Dijon Dressing</h3>
+                <li>¼ cup mayo</li>
+                <li>3 tablespoons avocado oil</li>
+                <li>3 tablespoons pure maple syrup</li>
+                <li>1 tablespoon dijon mustard</li>
+                <li>1 teaspoon apple cider vinegar</li>
+                <li>¼ teaspoon fine salt</li>
+                <li>¼ teaspoon black pepper</li>
+            </ul>
+
+            <!-- Directions list -->
+            <h2>Directions</h2>
+            <ol class="directions-list">
+                <li>Preheat the oven to 375°F.</li>
+                <li>To a baking sheet add the diced sweet potato and red onion. Drizzle with 1 teaspoon avocado oil, salt and pepper. Toss to evenly coat, spread out evenly on pan and bake for 15-18 minutes.</li>
+                <li>While sweet potatoes are baking, place a skillet over medium-high heat. Add remaining 1 teaspoon avocado oil, swirl to coat the bottom of the skillet, then add the cubed chicken. Cook for 3-4 minutes on each side or until the internal temperature reaches 165°F. Remove from heat and set aside.</li>
+                <li>In a small jar or bowl add all dressing ingredients, whisking until well combined. Set aside.</li>
+                <li>In a large mixing bowl, add the fresh spinach, dried cranberries, diced apple and chopped walnuts.</li>
+                <li>Remove the baking sheet from the oven, allow to cool for 5-10 minutes.</li>
+                <li>Add the cooked chicken to the mixing bowl, add the roasted sweet potatoes and onions to the mixing bowl. Drizzle the dressing over top and toss gently to evenly coat all ingredients.</li>
+                <li>Serve immediately. Store leftovers in an airtight container in the fridge for up to 3 days.</li>
+            </ol>
+
+			<!--Nutritional Info-->
+			<a href="#nutritionalModal1" class="open-button button">View Nutritional Info</a>
+            <div class="modal" id="nutritionalModal1">
+                <div class="modal-content">
+                    <a href="#" class="close-button">&times;</a>
+                    <h2>Nutritional Information for Chocolate Dipped Peanut Butter Cookies</h2>
+					<p class="serving-size">Serving Size: 1 cookie</p>
+                    <div class="nutritional-info">
+                        <div class="nutrient">
+                            <label>Calories:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 115px;"></div>
+                            </div>
+							<span class="nutritional-value">115 kcal</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Protein:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 30px;"></div>
+                            </div>
+							<span class="nutritional-value">3 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Fat:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70px;"></div>
+                            </div>
+							<span class="nutritional-value">7 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Carbohydrates:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 110px;"></div>
+                            </div>
+							<span class="nutritional-value">11 g</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Recipe Book</p>
+    </footer>
+</body>
+
+</html>

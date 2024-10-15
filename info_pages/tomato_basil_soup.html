@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Info</title>
+    <link rel="stylesheet" href="../info_page.css">
+</head>
+
+<body>
+    <header>
+        <h1>Stovetop Tomato Basil Soup</h1>
+    </header>
+
+    <main>
+        <section class="recipe-info">
+             <!-- Gallery of images for the recipe -->
+            <div class="image-gallery">
+                <input type="radio" name="gallery" id="image1" checked>
+                <input type="radio" name="gallery" id="image2">
+                <input type="radio" name="gallery" id="image3">
+
+                <div class="images">
+                    <div class="image-item">
+                        <img src="../images/galleries/tomato-basil-soup/tbs-bar1.webp" alt="TBS Image 1">
+                    </div>
+                    <div class="image-item">
+                        <img src="../images/galleries/tomato-basil-soup/tbs-bar2.webp" alt="TBS Image 2">
+                    </div>
+                    <div class="image-item">
+                        <img src="../images/galleries/tomato-basil-soup/tbs-bar3.webp" alt="TBS Image 3">
+                    </div>
+                </div>
+
+                <!-- Navigation buttons -->
+                <div class="gallery-controls">
+                    <label for="image1" class="prev">&#10094;</label>
+                    <label for="image2" class="next">&#10095;</label>
+                    <label for="image3" class="next">&#10095;</label>
+                </div>
+            </div>
+
+            <!-- Ingredients list -->
+            <h2>Ingredients</h2>
+            <ul class="ingredients-list">
+                <li>2 tablespoons olive oil</li>
+                <li>½ medium yellow onion, thinly sliced (1 cup)</li>
+                <li>3 cloves garlic, peeled and roughly chopped</li>
+                <li>3 tablespoons tomato paste</li>
+                <li>1 teaspoon dried Italian seasoning</li>
+                <li>½ teaspoon dried basil</li>
+                <li>½ teaspoon dried thyme</li>
+                <li>½ teaspoon balsamic vinegar</li>
+                <li>1 (28-ounce) can whole peeled tomatoes, well-drained and juice reserved</li>
+                <li>2 cups low-sodium vegetable broth</li>
+                <li>½ teaspoon fine salt</li>
+                <li>¼ teaspoon black pepper</li>
+                <li>¼ cup creme fraiche (may substitute heavy cream, Greek yogurt, or sour cream. Omit for vegan or use non-dairy plain yogurt or non-dairy sour cream for vegan and dairy-free)</li>
+                <li>3 tablespoons sliced fresh basil</li>
+            </ul>
+
+            <!-- Directions list -->
+            <h2>Directions</h2>
+            <ol class="directions-list">
+                <li>Place a heavy bottom pot (Dutch oven) over medium-high heat. When the pot is hot, add the olive oil and swirl to coat. When the oil starts to shimmer, add the onion. Cook, stirring occasionally, for 4 minutes or until the onions just start to soften.</li>
+                <li>Add the garlic. Stir and cook for 1 minute, stirring constantly until the garlic is fragrant.</li>
+                <li>Stir in the tomato paste, Italian seasoning, basil, thyme, and balsamic vinegar. Cook 3-4 minutes, stirring occasionally until the tomato sauce starts to thicken and caramelize just a bit (but not burn).</li>
+                <li>Add the drained tomatoes and continue to cook for 5 minutes, stirring occasionally.</li>
+                <li>Add the reserved tomato juice and broth. Stir. Reduce heat and simmer uncovered for 15 minutes.</li>
+                <li>Remove from heat. Transfer soup to a blender and blend until smooth. Taste and add salt and pepper to taste.</li>
+                <li>Swirl the cream fraiche into the soup bowls just before serving and sprinkle with fresh basil and cracked black pepper.</li>
+            </ol>
+
+			<!--Nutritional Info-->
+			<a href="#nutritionalModal1" class="open-button button">View Nutritional Info</a>
+            <div class="modal" id="nutritionalModal1">
+                <div class="modal-content">
+                    <a href="#" class="close-button">&times;</a>
+                    <h2>Nutritional Information for Chocolate Dipped Peanut Butter Cookies</h2>
+					<p class="serving-size">Serving Size: 1 cookie</p>
+                    <div class="nutritional-info">
+                        <div class="nutrient">
+                            <label>Calories:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 115px;"></div>
+                            </div>
+							<span class="nutritional-value">115 kcal</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Protein:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 30px;"></div>
+                            </div>
+							<span class="nutritional-value">3 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Fat:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70px;"></div>
+                            </div>
+							<span class="nutritional-value">7 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Carbohydrates:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 110px;"></div>
+                            </div>
+							<span class="nutritional-value">11 g</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Recipe Book</p>
+    </footer>
+</body>
+
+</html>

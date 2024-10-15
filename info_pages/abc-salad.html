@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Info</title>
+    <link rel="stylesheet" href="../info_page.css">
+</head>
+
+<body>
+    <header>
+        <h1>Apple Broccoli Cauliflower Salad with Lemon</h1>
+    </header>
+
+    <main>
+        <section class="recipe-info">
+             <!-- Gallery of images for the recipe -->
+            <div class="image-gallery">
+                <input type="radio" name="gallery" id="image1" checked>
+                <input type="radio" name="gallery" id="image2">
+                <input type="radio" name="gallery" id="image3">
+
+                <div class="images">
+                    <div class="image-item">
+                        <img src="../images/galleries/abc-salad/abcs-bar1.webp" alt="ABCS Image 1">
+                    </div>
+                    <div class="image-item">
+                        <img src="../images/galleries/abc-salad/abcs-bar2.webp" alt="ABCS Image 2">
+                    </div>
+                    <div class="image-item">
+                        <img src="../images/galleries/abc-salad/abcs-bar3.webp" alt="ABCS Image 3">
+                    </div>
+                </div>
+
+                <!-- Navigation buttons -->
+                <div class="gallery-controls">
+                    <label for="image1" class="prev">&#10094;</label>
+                    <label for="image2" class="next">&#10095;</label>
+                    <label for="image3" class="next">&#10095;</label>
+                </div>
+            </div>
+
+            <!-- Ingredients list -->
+            <h2>Ingredients</h2>
+            <ul class="ingredients-list">
+                <li>4 – 5 cups broccoli florets, chopped into bites size pieces (10–12 ounce bag)</li>
+                <li>2 ½ –3 cups cauliflower florets, chopped into bite size pieces (10-ounce bag)</li>
+                <li>1 medium apple, diced (1 ½ – 2 cups)</li>
+                <li>½ small red onion, diced (½ cup)</li>
+                <li>2 celery ribs, diced (½ cup)</li>
+                <li>2–3 green onion, thinly sliced (1/3 cup)</li>
+                <li>½ cup dried cranberries</li>
+                <li>½ cup feta cheese, crumbled (omit for dairy-free or Whole30)</li>
+                <li>½ cup lightly salted roasted almonds, roughly chopped (may substitute walnuts, pecans, or sunflower seed for nut free, etc.)</li>
+                <h3>For The Dressing:</h3>
+                <li>¼ cup olive oil or avocado oil</li>
+                <li>3 tablespoons lemon juice (1 lemon)</li>
+                <li>2 teaspoons honey (use maple syrup for vegan)</li>
+                <li>1 teaspoon garlic powder</li>
+                <li>½ teaspoon fine salt</li>
+                <li>¼ teaspoon black pepper</li>
+                <li>¾ cup mayo (use egg-free mayo for vegan)</li>
+            </ul>
+
+            <!-- Directions list -->
+            <h2>Directions</h2>
+            <ol class="directions-list">
+                <li>Make the dressing: in a small bowl combine the oil, lemon juice, honey, garlic powder, salt, and pepper. Whisk until well combined. Add the mayo and continue to whisk until well combine, about 2-3 minutes. Set aside.</li>
+                <li>In a large bowl, toss together all of the salad ingredients – broccoli, cauliflower, apple, red onion, celery, green onion, dried cranberries, feta cheese, and almonds or walnuts.</li>
+                <li>Add the dressing to the large bowl and toss until well combined. Let salad sit in the fridge for 30 minutes to allow veggies to marinate in the dressing (optional step but recommended)</li>
+                <li>Store leftovers in an airtight container in the fridge for up to 4 days.</li>
+            </ol>
+
+			<!--Nutritional Info-->
+			<a href="#nutritionalModal1" class="open-button button">View Nutritional Info</a>
+            <div class="modal" id="nutritionalModal1">
+                <div class="modal-content">
+                    <a href="#" class="close-button">&times;</a>
+                    <h2>Nutritional Information for Chocolate Dipped Peanut Butter Cookies</h2>
+					<p class="serving-size">Serving Size: 1 cookie</p>
+                    <div class="nutritional-info">
+                        <div class="nutrient">
+                            <label>Calories:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 115px;"></div>
+                            </div>
+							<span class="nutritional-value">115 kcal</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Protein:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 30px;"></div>
+                            </div>
+							<span class="nutritional-value">3 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Fat:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70px;"></div>
+                            </div>
+							<span class="nutritional-value">7 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Carbohydrates:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 110px;"></div>
+                            </div>
+							<span class="nutritional-value">11 g</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Recipe Book</p>
+    </footer>
+</body>
+
+</html>

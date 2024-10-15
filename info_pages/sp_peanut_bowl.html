@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Info</title>
+    <link rel="stylesheet" href="../info_page.css">
+</head>
+
+<body>
+    <header>
+        <h1>Thai-Inspired Sweet Potato Peanut Bowl with Chicken</h1>
+    </header>
+
+    <main>
+        <section class="recipe-info">
+             <!-- Gallery of images for the recipe -->
+            <div class="image-gallery">
+                <input type="radio" name="gallery" id="image1" checked>
+                <input type="radio" name="gallery" id="image2">
+                <input type="radio" name="gallery" id="image3">
+
+                <div class="images">
+                    <div class="image-item">
+                        <img src="../images/galleries/sp-peanut-bowl/sppb-bar1.webp" alt="SPPB Image 1">
+                    </div>
+                    <div class="image-item">
+                        <img src="../images/galleries/sp-peanut-bowl/sppb-bar2.webp" alt="SPPB Image 2">
+                    </div>
+                    <div class="image-item">
+                        <img src="../images/galleries/sp-peanut-bowl/sppb-bar3.webp" alt="SPPB Image 3">
+                    </div>
+                </div>
+
+                <!-- Navigation buttons -->
+                <div class="gallery-controls">
+                    <label for="image1" class="prev">&#10094;</label>
+                    <label for="image2" class="next">&#10095;</label>
+                    <label for="image3" class="next">&#10095;</label>
+                </div>
+            </div>
+
+            <!-- Ingredients list -->
+            <h2>Ingredients</h2>
+            <ul class="ingredients-list">
+                <h3>For The Bowls:</h3>
+                <li>3 teaspoons avocado oil, divided</li>
+                <li>1 medium sweet potato, peeled and cubed to ½ -inch pieces</li>
+                <li>3 cups fresh broccoli florets</li>
+                <li>1 15-ounce can chickpeas, drained and rinsed</li>
+                <li>1 lb raw chicken breast, cubed into 2-inch pieces</li>
+                <li>¼ teaspoon fine salt</li>
+                <li>⅛ teaspoon black pepper</li>
+                <li>⅓ cup dry roasted peanuts</li>
+                <li>¼ cup roughly chopped fresh cilantro</li>
+                <h3>For The Peanut Sauce:</h3>
+                <li>⅓ cup natural peanut butter</li>
+                <li>¼ cup coconut aminos (may sub tamari)</li>
+                <li>3 tablespoons lime juice</li>
+                <li>2 teaspoons rice vinegar</li>
+                <li>1 ½ teaspoons toasted sesame oil</li>
+                <li>1 teaspoon minced fresh ginger (may sub ¼ teaspoon ground ginger)</li>
+                <li>1 clove garlic, minced (may sub ½ teaspoon garlic powder)</li>
+                <li>½ teaspoon red pepper flakes</li>
+                <li>¼ teaspoon fine salt</li>
+                <li>Warm water if needed</li>
+
+            </ul>
+
+            <!-- Directions list -->
+            <h2>Directions</h2>
+            <ol class="directions-list">
+                <li>Preheat the oven to 350°F.</li>
+                <li>To a large baking sheet, add the sweet potatoes, broccoli, drained chickpeas, and 2 teaspoons avocado oil. Toss to coat then spread out on one-half of the baking sheet.</li>
+                <li>On the other half of the baking sheet, add the cubed chicken and remaining avocado oil, and the salt and pepper. Toss to coat then spread out evenly. </li>
+                <li>Bake for 15-18 minutes or until sweet potatoes are fork-tender with crispy outer edges and chicken is cooked to 165°F internal temperature. Remove from the oven.</li>
+                <li>While sweet potatoes and chicken are baking make the peanut sauce. In a small jar or bowl combine all sauce ingredients and whisk together until smooth. Add a little water if needed (this will depend on the consistency of the peanut butter you use).</li>
+                <li>Divide the roasted sweet potatoes, broccoli, chickpeas, and chicken between 4-6 bowls. Top with peanut sauce and toss to lightly coat. Top with dry roasted peanuts and fresh cilantro and more sauce, if desired.</li>
+            </ol>
+
+			<!--Nutritional Info-->
+			<a href="#nutritionalModal1" class="open-button button">View Nutritional Info</a>
+            <div class="modal" id="nutritionalModal1">
+                <div class="modal-content">
+                    <a href="#" class="close-button">&times;</a>
+                    <h2>Nutritional Information for Chocolate Dipped Peanut Butter Cookies</h2>
+					<p class="serving-size">Serving Size: 1 cookie</p>
+                    <div class="nutritional-info">
+                        <div class="nutrient">
+                            <label>Calories:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 115px;"></div>
+                            </div>
+							<span class="nutritional-value">115 kcal</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Protein:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 30px;"></div>
+                            </div>
+							<span class="nutritional-value">3 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Fat:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70px;"></div>
+                            </div>
+							<span class="nutritional-value">7 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Carbohydrates:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 110px;"></div>
+                            </div>
+							<span class="nutritional-value">11 g</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Recipe Book</p>
+    </footer>
+</body>
+
+</html>

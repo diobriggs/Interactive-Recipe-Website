@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Info</title>
+    <link rel="stylesheet" href="../info_page.css">
+</head>
+
+<body>
+    <header>
+        <h1>The Best Smothered Pork Chops</h1>
+    </header>
+
+    <main>
+        <section class="recipe-info">
+             <!-- Gallery of images for the recipe -->
+            <div class="image-gallery">
+                <input type="radio" name="gallery" id="image1" checked>
+                <input type="radio" name="gallery" id="image2">
+                <input type="radio" name="gallery" id="image3">
+
+                <div class="images">
+                    <div class="image-item">
+                        <img src="../images/galleries/smothered-porkchops/spc-bar1.webp" alt="SPC Image 1">
+                    </div>
+                    <div class="image-item">
+                        <img src="../images/galleries/smothered-porkchops/spc-bar2.webp" alt="SPC Image 2">
+                    </div>
+                    <div class="image-item">
+                        <img src="../images/galleries/smothered-porkchops/spc-bar3.webp" alt="SPC Image 3">
+                    </div>
+                </div>
+
+                <!-- Navigation buttons -->
+                <div class="gallery-controls">
+                    <label for="image1" class="prev">&#10094;</label>
+                    <label for="image2" class="next">&#10095;</label>
+                    <label for="image3" class="next">&#10095;</label>
+                </div>
+            </div>
+
+            <!-- Ingredients list -->
+            <h2>Ingredients</h2>
+            <ul class="ingredients-list">
+                <li>1 teaspoon garlic powder</li>
+                <li>1 teaspoon onion powder</li>
+                <li>1 teaspoon fine salt, divided</li>
+                <li>½ teaspoon black pepper</li>
+                <li>4 bone-in or boneless pork chops (each about ¾– to 1-inch thick; 1 ½ to 2 lbs total) </li>
+                <li>2 tablespoons avocado oil or olive oil</li>
+                <li>1 sweet yellow onion, thinly sliced</li>
+                <li>2 cups chicken broth, divided</li>
+                <li>3 tablespoons all-purpose flour (use gluten-free, if needed)</li>
+                <li>1 teaspoon ground sage</li>
+
+            </ul>
+
+            <!-- Directions list -->
+            <h2>Directions</h2>
+            <ol class="directions-list">
+                <li>In a small bowl, combine the garlic powder, onion powder, ½ teaspoon salt, and pepper; stir together. </li>
+                <li>Season both sides of the pork chops generously with all of the seasoning mixture.</li>
+                <li>Heat 1 tablespoon of the oil in a large heavy nonstick skillet over medium-high heat. </li>
+                <li>When the oil is hot, add the pork chops to the skillet and cook until browned on one side, 3-4 minutes. Turn the pork chops over and cook on the other side for another 3-4 minutes.</li>
+                <li>Remove the pork chops to a plate and cover with an inverted plate to keep them warm. </li>
+                <li>Add the remaining 1 tablespoon of oil to the skillet and swirl it around. Then, add ¼ cup of the broth to the skillet to deglaze it, stirring up any browned bits from the bottom of the skillet. </li>
+                <li>Add the sliced onion and saute until browned and tender, 8 to 10 minutes.</li>
+                <li>When the onions are softened, sprinkle the flour over the onions and stir until there is no more white flour showing. NOTE: The onions should be coated with the flour and thickened. </li>
+                <li>Add the remaining 1¾ cups broth to the skillet and stir to deglaze again, loosen up the onions and any browned bits on the bottom of the skillet.</li>
+                <li>Add the ground sage and the remaining ½ teaspoon salt. Bring the mixture to a simmer until thickened, which takes about 1 minute.</li>
+                <li>Return the pork chops to the skillet, tucking them into the gravy and spooning the onions over top. </li>
+                <li>Continue to cook until the thickest part of the pork chops register at 145 on a meat thermometer, which could take another 2 to 6 minutes, depending on the thickness of the chops. </li>
+                <li>Garnish with fresh herbs, such as fresh thyme sprigs or chopped fresh parsley.</li>
+                <li>If desired, serve the pork chops with mashed potatoes and spoon the gravy over top.</li>
+            </ol>
+
+			<!--Nutritional Info-->
+			<a href="#nutritionalModal1" class="open-button button">View Nutritional Info</a>
+            <div class="modal" id="nutritionalModal1">
+                <div class="modal-content">
+                    <a href="#" class="close-button">&times;</a>
+                    <h2>Nutritional Information for Chocolate Dipped Peanut Butter Cookies</h2>
+					<p class="serving-size">Serving Size: 1 cookie</p>
+                    <div class="nutritional-info">
+                        <div class="nutrient">
+                            <label>Calories:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 115px;"></div>
+                            </div>
+							<span class="nutritional-value">115 kcal</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Protein:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 30px;"></div>
+                            </div>
+							<span class="nutritional-value">3 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Fat:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70px;"></div>
+                            </div>
+							<span class="nutritional-value">7 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Carbohydrates:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 110px;"></div>
+                            </div>
+							<span class="nutritional-value">11 g</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Recipe Book</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Info</title>
+    <link rel="stylesheet" href="../info_page.css">
+</head>
+
+<body>
+    <header>
+        <h1>Pumpkin Brownies</h1>
+    </header>
+
+    <main>
+        <section class="recipe-info">
+             <!-- Gallery of images for the recipe -->
+            <div class="image-gallery">
+                <input type="radio" name="gallery" id="image1" checked>
+                <input type="radio" name="gallery" id="image2">
+                <input type="radio" name="gallery" id="image3">
+
+                <div class="images">
+                    <div class="image-item">
+                        <img src="../images/galleries/pumpkin-brownies/pb-bar1.webp" alt="PB Image 1">
+                    </div>
+                    <div class="image-item">
+                        <img src="../images/galleries/pumpkin-brownies/pb-bar2.webp" alt="PB Image 2">
+                    </div>
+                    <div class="image-item">
+                        <img src="../images/galleries/pumpkin-brownies/pb-bar3.webp" alt="PB Image 3">
+                    </div>
+                </div>
+
+                <!-- Navigation buttons -->
+                <div class="gallery-controls">
+                    <label for="image1" class="prev">&#10094;</label>
+                    <label for="image2" class="next">&#10095;</label>
+                    <label for="image3" class="next">&#10095;</label>
+                </div>
+            </div>
+
+            <!-- Ingredients list -->
+            <h2>Ingredients</h2>
+            <ul class="ingredients-list">
+                <li>1 store-bought brownie mix (plus the ingredients listed on the box to make the batter)*</li>
+                <li>1/3 cup chocolate chips or chopped chocolate bar</li>
+                <li>4 ounces neufchatel or full fat cream cheese (½ block), softened </li>
+                <li>¾ cup pumpkin puree (about a half of a 15-ounce can)</li>
+                <li>¼ cup pure maple syrup</li>
+                <li>1½ teaspoons pumpkin pie spice </li>
+                <li>1 teaspoon pure vanilla extract</li>
+                <li>Flakey sea salt</li>
+            </ul>
+
+            <!-- Directions list -->
+            <h2>Directions</h2>
+            <ol class="directions-list">
+                <li>Preheat the oven to 350℉. Line a 9×9 inch baking pan with parchment paper; set aside. </li>
+                <li>In a mixing bowl, prepare the brownie batter according to the package instructions. Stir in the chocolate chips; set aside.</li>
+                <li>In another mixing bowl, gently beat the the cream cheese with a hand mixer until smooth. Add the pumpkin, maple syrup, pumpkin pie spice, and vanilla; mix until well combined with the hand mixer.</li>
+                <li>To the prepared baking pan, add about 3/4 of the brownie batter and spread it out with a spatula.</li>
+                <li>Then add the pumpkin-cream cheese batter over the brownie batter and spread it out with a spatula.</li>
+                <li>Add the remaining brownie batter over the pumpkin layer in about 9 small spoonfuls. Swirl the batters together using a knife. </li>
+                <li>Bake for 45-50 minutes or until toothpick inserted in the center comes out clean. Top with flakey salt. </li>
+                <li>Let cool on a wire rack before cutting into 16 brownies. </li>
+            </ol>
+
+			<!--Nutritional Info-->
+			<a href="#nutritionalModal1" class="open-button button">View Nutritional Info</a>
+            <div class="modal" id="nutritionalModal1">
+                <div class="modal-content">
+                    <a href="#" class="close-button">&times;</a>
+                    <h2>Nutritional Information for Chocolate Dipped Peanut Butter Cookies</h2>
+					<p class="serving-size">Serving Size: 1 cookie</p>
+                    <div class="nutritional-info">
+                        <div class="nutrient">
+                            <label>Calories:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 115px;"></div>
+                            </div>
+							<span class="nutritional-value">115 kcal</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Protein:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 30px;"></div>
+                            </div>
+							<span class="nutritional-value">3 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Fat:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70px;"></div>
+                            </div>
+							<span class="nutritional-value">7 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Carbohydrates:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 110px;"></div>
+                            </div>
+							<span class="nutritional-value">11 g</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Recipe Book</p>
+    </footer>
+</body>
+
+</html>

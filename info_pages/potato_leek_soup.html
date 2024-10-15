@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Info</title>
+    <link rel="stylesheet" href="../info_page.css">
+</head>
+
+<body>
+    <header>
+        <h1>Creamy Potato Leek Soup with Bacon</h1>
+    </header>
+
+    <main>
+        <section class="recipe-info">
+             <!-- Gallery of images for the recipe -->
+            <div class="image-gallery">
+                <input type="radio" name="gallery" id="image1" checked>
+                <input type="radio" name="gallery" id="image2">
+                <input type="radio" name="gallery" id="image3">
+
+                <div class="images">
+                    <div class="image-item">
+                        <img src="../images/galleries/potato-leek-soup/pls-bar1.webp" alt="PLS Image 1">
+                    </div>
+                    <div class="image-item">
+                        <img src="../images/galleries/potato-leek-soup/pls-bar2.webp" alt="PLS Image 2">
+                    </div>
+                    <div class="image-item">
+                        <img src="../images/galleries/potato-leek-soup/pls-bar3.webp" alt="PLS Image 3">
+                    </div>
+                </div>
+
+                <!-- Navigation buttons -->
+                <div class="gallery-controls">
+                    <label for="image1" class="prev">&#10094;</label>
+                    <label for="image2" class="next">&#10095;</label>
+                    <label for="image3" class="next">&#10095;</label>
+                </div>
+            </div>
+
+            <!-- Ingredients list -->
+            <h2>Ingredients</h2>
+            <ul class="ingredients-list">
+                <li>4–5 strips slices bacon, chopped</li>
+                <li>1 large leek, thinly sliced (white and light green parts only; about 2–3 cups)</li>
+                <li>2 celery ribs, finely diced (about ⅓ cup)</li>
+                <li>½ medium yellow onion, diced (about 1 cup)</li>
+                <li>5 cloves garlic, minced</li>
+                <li>¾ teaspoon dried thyme (or 2 teaspoons fresh thyme leaves)</li>
+                <li>½ teaspoon dried parsley (or 1 tablespoon fresh parsley)</li>
+                <li>½ teaspoon salt, plus more to taste</li>
+                <li>2 lbs. red or Yukon gold potatoes (or a mix), cut into ¼–½-inch cubes with skin still on</li>
+                <li>3 cups chicken or vegetable broth, divided</li>
+            </ul>
+
+            <!-- Directions list -->
+            <h2>Directions</h2>
+            <ol class="directions-list">
+                <li>Place a large pot or Dutch oven over medium-high heat.</li>
+                <li>When the pot is hot, add the chopped bacon and cook, stirring occasionally until crisp (about 5 minutes).</li>
+                <li>Transfer the bacon to a paper-towel-lined plate to drain; set aside.</li>
+                <li>To the same pot with the bacon drippings, add the sliced leek, celery, and onion. Cook, stirring occasionally, for 7-8 minutes or until the onions start to soften.</li>
+                <li>Add garlic, stir, and cook for another 30 seconds or until fragrant.</li>
+                <li>Add the remaining ingredients to the pot (except for the bacon, ½ cup of the broth, and any garnishes). Set aside the ½ cup broth for later.</li>
+                <li>Bring ingredients in the pot just to a boil, then lower the heat to maintain a vigorous simmer and cover with a lid.</li>
+                <li>Cook for 20-22 minutes or until potatoes are very tender. Remove from heat and ladle half to three-quarters of the soup into the container of the blender. </li>
+                <li>Secure the blender lid in place and blend until the soup is creamy with some chunks remaining. Or, if you want it extra creamy, blend it even further to your desired consistency. (You can also use an immersion blender.) </li>
+                <li>Carefully remove the blender lid and stir the blended soup back into the pot. </li>
+                <li>Add the reserved ½ cup broth, if needed, to thin the soup to your desired consistency.</li>
+                <li>Season with salt as needed, stir in the bacon, and garnish with optional toppings of choice.</li>
+            </ol>
+
+			<!--Nutritional Info-->
+			<a href="#nutritionalModal1" class="open-button button">View Nutritional Info</a>
+            <div class="modal" id="nutritionalModal1">
+                <div class="modal-content">
+                    <a href="#" class="close-button">&times;</a>
+                    <h2>Nutritional Information for Chocolate Dipped Peanut Butter Cookies</h2>
+					<p class="serving-size">Serving Size: 1 cookie</p>
+                    <div class="nutritional-info">
+                        <div class="nutrient">
+                            <label>Calories:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 115px;"></div>
+                            </div>
+							<span class="nutritional-value">115 kcal</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Protein:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 30px;"></div>
+                            </div>
+							<span class="nutritional-value">3 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Fat:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70px;"></div>
+                            </div>
+							<span class="nutritional-value">7 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Carbohydrates:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 110px;"></div>
+                            </div>
+							<span class="nutritional-value">11 g</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Recipe Book</p>
+    </footer>
+</body>
+
+</html>

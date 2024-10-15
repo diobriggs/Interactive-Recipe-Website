@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Info</title>
+    <link rel="stylesheet" href="../info_page.css">
+</head>
+
+<body>
+    <header>
+        <h1>Beef and Lentil Stew (Moroccan Spiced)</h1>
+    </header>
+
+    <main>
+        <section class="recipe-info">
+             <!-- Gallery of images for the recipe -->
+            <div class="image-gallery">
+                <input type="radio" name="gallery" id="image1" checked>
+                <input type="radio" name="gallery" id="image2">
+                <input type="radio" name="gallery" id="image3">
+
+                <div class="images">
+                    <div class="image-item">
+                        <img src="../images/galleries/beef-lentil-soup/bls-bar1.webp" alt="BLS Image 1">
+                    </div>
+                    <div class="image-item">
+                        <img src="../images/galleries/beef-lentil-soup/bls-bar2.webp" alt="BLS Image 2">
+                    </div>
+                    <div class="image-item">
+                        <img src="../images/galleries/beef-lentil-soup/bls-bar3.webp" alt="BLS Image 3">
+                    </div>
+                </div>
+
+                <!-- Navigation buttons -->
+                <div class="gallery-controls">
+                    <label for="image1" class="prev">&#10094;</label>
+                    <label for="image2" class="next">&#10095;</label>
+                    <label for="image3" class="next">&#10095;</label>
+                </div>
+            </div>
+
+            <!-- Ingredients list -->
+            <h2>Ingredients</h2>
+            <ul class="ingredients-list">
+                <li>1 ½ lbs beef stew meat, cut into bite-sized pieces</li>
+                <li>2 teaspoons olive oil </li>
+                <li>1 medium onion, diced (1 ½ cups)</li>
+                <li>3 medium carrots, diced ¼ inch (heaping 1 cup)</li>
+                <li>3 stalks celery, diced (½ cup)</li>
+                <li>6 garlic cloves, minced (2 tablespoons)</li>
+                <li>1 (14-ounce) can diced tomatoes</li>
+                <li>3 cups (24 ounces) low-sodium beef broth*</li>
+                <li>1 cup dry red lentils (may sub green or brown lentils)</li>
+                <li>1 ½ teaspoons ground turmeric</li>
+                <li>1 ½ teaspoons paprika</li>
+                <li>¾ teaspoon ground cumin</li>
+                <li>¾ teaspoon ground coriander</li>
+                <li>½ teaspoon garlic powder</li>
+                <li>½ teaspoon ground cinnamon</li>
+                <li>½ teaspoon ground ginger</li>
+                <li>1 teaspoon fine salt</li>
+                <li>½ teaspoon ground allspice</li>
+                <li>¼ teaspoon black pepper, plus more to taste</li>
+                <li>2 bay leaves</li>
+                <li>⅓ cup dried apricots, finely diced </li>
+                <li>Juice of ½ lemon</li>
+                <li>¼ cup fresh parsley, chopped; plus more for garnish</li>
+            </ul>
+
+            <!-- Directions list -->
+            <h2>Directions</h2>
+            <ol class="directions-list">
+                <li>Place a large skillet over medium-high heat. When the skillet is hot, add the oil and swirl to coat. Add the beef and cook until browned, about 2-3 minutes. Flip and cook for another 2 minutes. Transfer the browned meat and pan juices to the slow cooker.</li>
+                <li>To the slow cooker, add the diced onion, carrots, celery, garlic, diced tomatoes, broth, dry lentils, turmeric, paprika, cumin, coriander, garlic powder, cinnamon, ginger, salt, allspice, and black pepper. Stir to combine all of the ingredients. </li>
+                <li>Add bay leaves and gently stir again. </li>
+                <li>Place the lid on the slow cooker and cook on the low setting for 7-9 hours** or until the lentils are tender.</li>
+                <li>Stir in the dried apricots, lemon juice, and parsley.</li>
+                <li>Ladle the stew into bowls. If desired, top servings with yogurt or sour cream, sprinkle with fresh parsley and cracked black pepper, and serve with pita bread or naan.</li>
+            </ol>
+
+			<!--Nutritional Info-->
+			<a href="#nutritionalModal1" class="open-button button">View Nutritional Info</a>
+            <div class="modal" id="nutritionalModal1">
+                <div class="modal-content">
+                    <a href="#" class="close-button">&times;</a>
+                    <h2>Nutritional Information for Chocolate Dipped Peanut Butter Cookies</h2>
+					<p class="serving-size">Serving Size: 1 cookie</p>
+                    <div class="nutritional-info">
+                        <div class="nutrient">
+                            <label>Calories:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 115px;"></div>
+                            </div>
+							<span class="nutritional-value">115 kcal</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Protein:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 30px;"></div>
+                            </div>
+							<span class="nutritional-value">3 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Fat:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70px;"></div>
+                            </div>
+							<span class="nutritional-value">7 g</span>
+                        </div>
+                        <div class="nutrient">
+                            <label>Carbohydrates:</label>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 110px;"></div>
+                            </div>
+							<span class="nutritional-value">11 g</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Recipe Book</p>
+    </footer>
+</body>
+
+</html>
