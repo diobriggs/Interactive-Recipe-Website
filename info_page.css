@@ -73,9 +73,7 @@ h2 {
 .image-item img {
     width: 100%;
     height: 100%;
-    /* Ensures the image height scales with its aspect ratio */
     object-fit: cover;
-    /* Ensures the image covers the area without being stretched */
     border-radius: 8px;
 }
 
@@ -132,20 +130,20 @@ input[type="radio"] {
 
 .ingredients-list li {
     position: relative;
-    margin-bottom: 0.5em; /* Space between items */
+    margin-bottom: 0.5em;
 }
 
 .ingredients-list input[type="checkbox"] {
-    display: none; /* Hide the checkbox */
+    display: none;
 }
 
 .ingredients-list label {
-    cursor: pointer; /* Change cursor to pointer on hover */
+    cursor: pointer;
 }
 
 .ingredients-list input[type="checkbox"]:checked + label {
     text-decoration: line-through; /* Apply strikethrough when checked */
-    color: gray; /* Optional: Change color when checked */
+    color: #A9A9A9;
 }
 
 .ingredients-list li::before {
