@@ -16,6 +16,7 @@ body {
 
 header,
 footer {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
     text-align: center;
     background-color: #333333b9;
     color: #fff;
@@ -40,10 +41,10 @@ h2 {
 
 /* Recipe Info Section */
 .recipe-info {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
     background-color: #ffffffcf;
     padding: 2em;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 800px;
     text-align: center;
     width: 100%;
@@ -141,8 +142,9 @@ input[type="radio"] {
     cursor: pointer;
 }
 
-.ingredients-list input[type="checkbox"]:checked + label {
-    text-decoration: line-through; /* Apply strikethrough when checked */
+.ingredients-list input[type="checkbox"]:checked+label {
+    text-decoration: line-through;
+    /* Apply strikethrough when checked */
     color: #A9A9A9;
 }
 
@@ -154,7 +156,7 @@ input[type="radio"] {
     margin-right: 10px;
 }
 
-.ingredients-list li:hover{
+.ingredients-list li:hover {
     font-weight: bold;
     font-size: 1.1em;
     background-color: #f0f8ff;
