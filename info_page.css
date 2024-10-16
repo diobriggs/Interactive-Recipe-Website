@@ -130,6 +130,24 @@ input[type="radio"] {
     text-align: left;
 }
 
+.ingredients-list li {
+    position: relative;
+    margin-bottom: 0.5em; /* Space between items */
+}
+
+.ingredients-list input[type="checkbox"] {
+    display: none; /* Hide the checkbox */
+}
+
+.ingredients-list label {
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.ingredients-list input[type="checkbox"]:checked + label {
+    text-decoration: line-through; /* Apply strikethrough when checked */
+    color: gray; /* Optional: Change color when checked */
+}
+
 .ingredients-list li::before {
     content: "• ";
     color: #76c7c0;
