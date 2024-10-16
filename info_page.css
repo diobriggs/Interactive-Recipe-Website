@@ -154,8 +154,7 @@ input[type="radio"] {
     margin-right: 10px;
 }
 
-.ingredients-list li:hover,
-.directions-list li:hover {
+.ingredients-list li:hover{
     font-weight: bold;
     font-size: 1.1em;
     background-color: #f0f8ff;
