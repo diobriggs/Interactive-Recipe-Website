@@ -19,6 +19,7 @@ body {
 
 header,
 footer {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
     text-align: center;
     background-color: #333333b9;
     color: #fff;
@@ -53,7 +54,7 @@ h2 {
     padding: 1.5em;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
     transition: transform 0.3s ease, boxe-shadow 0.3s ease;
     transform-style: preserve-3d;
     cursor: pointer;
@@ -164,7 +165,7 @@ main label {
     padding: 0.5em 1em;
     background-color: rgba(255, 255, 255, 0.912);
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
     cursor: pointer;
 }
 
