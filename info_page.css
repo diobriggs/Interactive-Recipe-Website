@@ -134,7 +134,7 @@ input[type="radio"] {
 }
 
 .ingredients-list input[type="checkbox"] {
-    display: none;
+    display: inline;
 }
 
 .ingredients-list label {
