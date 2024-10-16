@@ -41,7 +41,6 @@ h2 {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-items: center;
     grid-gap: 2em;
-    grid-auto-flow: dense;
     padding: 2em;
 }
 
@@ -104,24 +103,25 @@ h2 {
 
 /*Fade In and Fade Out animations for filtering effect*/
 @keyframes fadeIn {
-    0% {
+    from {
         opacity: 0;
     }
 
-    100% {
+    to {
         opacity: 1;
     }
 }
 
 @keyframes fadeOut {
-    0% {
+    from {
         opacity: 1;
     }
 
-    100% {
+    to {
         opacity: 0;
     }
 }
+
 
 
 /* Filtering logic using attribute selectors */
@@ -132,7 +132,7 @@ h2 {
 [value="breakfast"]:checked~div.recipe-cards div.recipe-card[data-category="breakfast"],
 [value="drink"]:checked~div.recipe-cards div.recipe-card[data-category="drink"] {
     display: block;
-    animation: fadeIn .25s;
+    animation: fadeIn 0.8s ease forwards;
 }
 
 [value="dessert"]:not(:checked)~div.recipe-cards div.recipe-card[data-category="dessert"],
@@ -141,7 +141,8 @@ h2 {
 [value="soups"]:not(:checked)~div.recipe-cards div.recipe-card[data-category="soups"],
 [value="breakfast"]:not(:checked)~div.recipe-cards div.recipe-card[data-category="breakfast"],
 [value="drink"]:not(:checked)~div.recipe-cards div.recipe-card[data-category="drink"] {
-    animation: fadeOut .25s;
+    animation: fadeOut 1s ease forwards;
+    animation-delay: 0s, 1s;
     display: none;
 }
 
@@ -164,6 +165,7 @@ main label {
     background-color: rgba(255, 255, 255, 0.912);
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 main label:hover {
