@@ -55,7 +55,7 @@ h2 {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, boxe-shadow 0.3s ease;
     transform-style: preserve-3d;
     cursor: pointer;
 }
@@ -84,10 +84,11 @@ h2 {
     background-color: rgb(252, 235, 215);
 }
 
-/*active state for click effect*/
+/*active state for click effect adding the flip animation to the active state*/
 .recipe-card:active {
     transform: scale(0.98);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    animation: flip 0.6s forwards;
 }
 
 /*flip animation*/
@@ -99,11 +100,6 @@ h2 {
     100% {
         transform: rotateY(180deg);
     }
-}
-
-/*adding the flip animation to the active state*/
-.recipe-card:active {
-    animation: flip 0.6s forwards;
 }
 
 /*Fade In and Fade Out animations for filtering effect*/
@@ -125,11 +121,6 @@ h2 {
     100% {
         opacity: 0;
     }
-}
-
-/*adding the flip animation to the active state*/
-.recipe-card:active {
-    animation: flip 0.6s forwards;
 }
 
 
@@ -154,15 +145,6 @@ h2 {
     display: none;
 }
 
-.input {
-    margin: 0.5em;
-    transform: scale(1.2);
-    /*slightly larger checkboxes*/
-    cursor: pointer;
-    color: white;
-
-}
-
 
 /*centering and styling the filter options*/
 main {
@@ -182,6 +164,11 @@ main label {
     background-color: rgba(255, 255, 255, 0.912);
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+main label:hover {
+    background-color: rgba(255, 235, 215);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 main .input {

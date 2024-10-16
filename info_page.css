@@ -186,71 +186,95 @@ footer:hover {
     border-radius: 8px;
     width: 80%;
     max-width: 500px;
-    max-height: 80%; /* Prevent overflow */
-    overflow-y: auto; /* Enable scrolling if needed */
-    margin-top: 50px; /* Adjust this value to move the modal higher or lower */
-    margin-left: auto; /* Center horizontally */
-    margin-right: auto; /* Center horizontally */
+    max-height: 80%;
+    /* Prevent overflow */
+    overflow-y: auto;
+    /* Enable scrolling if needed */
+    margin-top: 50px;
+    /* Adjust this value to move the modal higher or lower */
+    margin-left: auto;
+    /* Center horizontally */
+    margin-right: auto;
+    /* Center horizontally */
 }
 
 /* Show modal when targeted */
 #nutritionalModal1:target {
     display: block;
 }
+
 #nutritionalModal2:target {
     display: block;
 }
+
 #nutritionalModal3:target {
     display: block;
 }
+
 #nutritionalModal4:target {
     display: block;
 }
+
 #nutritionalModal5:target {
     display: block;
 }
+
 #nutritionalModal6:target {
     display: block;
 }
+
 #nutritionalModal7:target {
     display: block;
 }
+
 #nutritionalModal8:target {
     display: block;
 }
+
 #nutritionalModal9:target {
     display: block;
 }
+
 #nutritionalModal10:target {
     display: block;
 }
+
 #nutritionalModal11:target {
     display: block;
 }
+
 #nutritionalModal12:target {
     display: block;
 }
+
 #nutritionalModal13:target {
     display: block;
 }
+
 #nutritionalModal14:target {
     display: block;
 }
+
 #nutritionalModal15:target {
     display: block;
 }
+
 #nutritionalModal16:target {
     display: block;
 }
+
 #nutritionalModal17:target {
     display: block;
 }
+
 #nutritionalModal18:target {
     display: block;
 }
+
 #nutritionalModal19:target {
     display: block;
 }
+
 #nutritionalModal20:target {
     display: block;
 }
